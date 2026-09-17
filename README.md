@@ -9,3 +9,13 @@ Serve `dist` through an HTTP server. The application uses hash navigation. The m
 ## Login and VPN walkthrough
 
 The entry screen is a presentation-only login gate. Use `demo@example.com` / `DemoAccess!`, select an illustrative network profile, and run the simulated connection check. The unavailable-connection option keeps the sample workspace hidden until a successful retry. Sign out clears the in-memory demo session; reload requires signing in again. No password is saved or transmitted, and no real authentication, VPN, proxy or IP change occurs. This frontend gate must not be used to protect real data. Production login and gateway verification require server-side implementation.
+
+## Client walkthrough
+
+The refined demo includes a client portfolio selector, performance chart with revenue/spend switching, channel mix, a three-step campaign builder with creative review, draft duplication, approval simulation and a session activity history. CSV exports follow the selected portfolio. Mobile navigation, keyboard focus and reduced-motion preferences are supported.
+
+Suggested presentation: sign in → simulate the network check → review portfolio performance → create a campaign → preview creative and budget → send for review → simulate approval → export a report. Use Reset sample data before presenting.
+
+## Render
+
+Create a Static Site connected to this repository. Use the `main` branch, leave Root Directory empty, set Build Command to `echo "Static demo ready"`, and Publish Directory to `dist`. No environment variables or server are needed for the demonstration.
