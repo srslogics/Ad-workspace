@@ -19,3 +19,7 @@ Suggested presentation: sign in → simulate the network check → review portfo
 ## Render
 
 Create a Static Site connected to this repository. Use the `main` branch, leave Root Directory empty, set Build Command to `echo "Static demo ready"`, and Publish Directory to `dist`. No environment variables or server are needed for the demonstration.
+
+## Simulated account authorization
+
+Ad accounts → Connect account provides an interactive authorization walkthrough for Meta, Google, LinkedIn and TikTok. Review illustrative permissions, approve or decline, select existing sample accounts, and see the connected-demo status. Manage account allows disconnecting. Connection status persists in the current tab and Reset sample data clears it. This is not a provider login screen, does not request passwords or tokens, and makes no provider API calls. Other listed platforms retain explanatory previews. Permission selection illustrates the authorization contract; it does not restrict the separate sample campaign sandbox.
