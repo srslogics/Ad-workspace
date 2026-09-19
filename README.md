@@ -29,3 +29,7 @@ Ad accounts → Connect account provides an interactive authorization walkthroug
 Team & access includes sample members, account assignments and a role preview. Role controls limit demo mutations; member account assignments are illustrative and do not isolate the shared sample dataset. Campaign details include editable ad sets/groups and ads, with a simulated approval state. Creative library accepts local JPG/PNG/WebP/MP4 files up to 20 MB, checks media readability and dimensions, and allows assigning the filename to a sample ad. Media stays local and clears on reload.
 
 Budget changes enter a queue; a different preview role must approve them. Settings controls the sample-spend alert threshold. Reports offers three deterministic sample date ranges and local schedules with pause/resume; no email is sent. Account health supports simulated expiration, sync failure and retry; expired connections must complete the existing connection walkthrough before retrying. Reset sample data clears these additions. These are presentation workflows, not production authorization, background jobs or platform-specific validation.
+
+## Demo quality checks
+
+Run `node tests/validation.cjs` for persisted-data regression checks. See `docs/DEMO_AUDIT.md` for the audit scope, fixes, verified checks and remaining production requirements. `render.yaml` provides static-site security headers; apply them through Render Blueprint configuration or equivalent service settings and verify the deployed headers. This demonstration is not certified as fully WCAG/OWASP compliant.
